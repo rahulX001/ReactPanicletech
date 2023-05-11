@@ -20,8 +20,8 @@ function ChartB() {
       {
         label: "Country with number of people",
         data: Object.keys(counts).map((key) => counts[key]),
-        backgroundColor: ["blue", "red"],
-        borderColor: ["yellow", "black"],
+        backgroundColor: ["#BA55D3", "#90EE90",	"#F4A460","#808000","#008B8B"],
+        borderColor: ["black"],
         borderWidth: 1,
       },
     ],

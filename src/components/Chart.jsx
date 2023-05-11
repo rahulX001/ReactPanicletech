@@ -20,9 +20,10 @@ function ChartA() {
       {
         label: "Total Number out of " + Data.length,
         data: [numMales, numFemales],
-        backgroundColor: ["blue", "red"],
-        borderColor: ["yellow", "black"],
+        backgroundColor: ["#BA55D3", "#90EE90"],
+        borderColor: ["black", "black"],
         borderWidth: 1,
+        color:"black"
       },
     ],
     options: {

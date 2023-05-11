@@ -60,7 +60,7 @@ export default function BasicTable() {
               </TableCell>
               <TableCell align="right">{ageCalculator(row.dob)}</TableCell>
               <TableCell align="right">{row.gender}</TableCell>
-              <TableCell align="right">{row.country}</TableCell>
+              <TableCell align="right">{row.email}</TableCell>
               <TableCell align="right">
                 <Editdata detail={row} />
               </TableCell>
