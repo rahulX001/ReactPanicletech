@@ -56,7 +56,7 @@ export default function BasicTable() {
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.first_name}
+                {row.first_name} {row.last_name}
               </TableCell>
               <TableCell align="right">{ageCalculator(row.dob)}</TableCell>
               <TableCell align="right">{row.gender}</TableCell>

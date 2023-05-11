@@ -20,6 +20,7 @@ const style = {
 
 export default function Editdata({ detail }) {
   const [fieldname, setFieldname] = React.useState(detail.first_name);
+  const [fieldlastname, setFieldlastname] = React.useState(detail.last_name);
   const [fieldage, setFieldage] = React.useState(detail.dob);
   const [fieldgender, setFieldgender] = React.useState(detail.gender);
   const [fieldemail, setFieldemail] = React.useState(detail.email);
@@ -31,6 +32,7 @@ export default function Editdata({ detail }) {
   function setData(e) {
     e.preventDefault();
     Data[detail.id - 1].first_name = fieldname;
+    Data[detail.id - 1].last_name = fieldlastname;
     Data[detail.id - 1].dob = fieldage;
     Data[detail.id - 1].gender = fieldgender;
     Data[detail.id - 1].email = fieldemail;
@@ -62,7 +64,18 @@ export default function Editdata({ detail }) {
               />
             </Typography>
             <Typography id="modal-modal-title" variant="h6" component="h2">
-              dob:
+              Last name:
+            </Typography>
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              <input
+                type="text"
+                className="Editdatainput"
+                onChange={(e) => setFieldlastname(e.target.value)}
+                value={fieldlastname}
+              />
+            </Typography>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              Bob:
             </Typography>
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
               <input
@@ -73,7 +86,7 @@ export default function Editdata({ detail }) {
               />
             </Typography>
             <Typography id="modal-modal-title" variant="h6" component="h2">
-              gender:
+              Gender:
             </Typography>
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
               <input
@@ -84,7 +97,7 @@ export default function Editdata({ detail }) {
               />
             </Typography>
             <Typography id="modal-modal-title" variant="h6" component="h2">
-              email:
+              Email:
             </Typography>
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
               <input
