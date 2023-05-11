@@ -12,7 +12,7 @@ export default function FormCard() {
       <Card
         sx={{ maxWidth: 345 }}
         style={{
-          backgroundColor: "#97BC62FF",
+          backgroundColor: "#FDF5E6",
           padding: "5rem",
           borderRadius: "1rem",
         }}
@@ -21,13 +21,13 @@ export default function FormCard() {
           <Typography gutterBottom variant="h5" component="div">
             Name : {formData.name}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" >
             Age : {formData.age}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" >
             Gender: {formData.gender}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" >
             Email : {formData.email}
           </Typography>
         </CardContent>

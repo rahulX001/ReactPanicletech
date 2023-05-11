@@ -30,7 +30,8 @@ export default function MyForm() {
 
   return (
     <form onSubmit={Submit} className="formcontainer">
-      <Card style={{ padding: "3rem", backgroundColor: "#97BC62FF" }}>
+      <Card style={{ padding: "3rem", backgroundColor: "#FDF5E6",borderRadius:"1rem" }}>
+        <div style={{fontSize:"3rem",fontWeight:"600",paddingLeft:"2rem"}}>Form</div>
         <div>
           <label htmlFor="name">Name:</label> <br />
           <input
